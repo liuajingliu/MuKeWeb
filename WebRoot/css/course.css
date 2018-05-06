@@ -1,0 +1,403 @@
+/*课程页面开始*/
+
+/*背景设置*/
+body {
+	height: 100%;
+	width: 100%;
+	background: url(../imgs/bg.jpg) no-repeat;
+	background-size: cover;
+
+	/*禁止选择*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+.course-header{
+	height: 61px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	line-height: 61px;
+}
+.course-header h1{
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+.course-header .header-img{
+	height: 20px;
+	width: 89px;
+	float: right;
+	position: relative;
+	top: 15px;
+	right: 0px;
+	background: url(../imgs/for_teacher.png);
+	transition:all .3s;
+}
+.course-header .header-img:hover{
+	right: -10px;
+}
+
+/*方向部分*/
+.course-fangxiang{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #ddd;
+}
+.course-fangxiang ul{
+	margin-top:15px;
+}
+.course-fangxiang ul li{
+	float: left;
+	list-style: none;
+}
+.li-one{
+	float: left;
+	font-size: 12px;
+	color:#666;
+	width: 56px;
+	height: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	margin: 16px 0;
+}
+.li-all{}
+.li-all-a{
+	font-size: 13px;
+	display: block;
+	width: 36px;
+	height: 20px;
+	background: #f01400;
+	line-height: 20px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	text-decoration:none;
+}
+
+.li-all-a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.li-two{
+	font-size: 13px;
+	display: block;
+	height: 20px;
+	width: 65px;
+	color:#333;
+	margin-left: 30px;
+	
+}
+
+.li-two:hover{
+	color: #cc0000;
+	text-decoration: none;
+}
+
+/*tool-bar开始*/
+.course-tool-bar{
+	height: 41px;
+	background: #f9f9f9;
+	padding:10px 0px;
+}
+.course-tool-bar a:hover{
+	text-decoration: none;
+}
+.course-tool-bar .zuixin{
+	color:#555;
+	margin-right:10px;
+}
+.course-tool-bar .zuire{
+	color:#444;
+	margin-left: 30px;
+}
+
+.course-tool-bar .tool-left{
+	float: left;
+}
+.course-tool-bar .tool-right{
+	float: right;
+}
+.course-tool-bar .tool-right .lt,.rt{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background: #eee;
+	text-align: center;
+	line-height: 19px;
+	color:#666;
+	border: 1px solid #666;
+
+}
+.course-tool-bar .tool-right a:hover{
+	background: #ccc;
+	border:1px solid #555;
+	color:#fff;
+}
+
+/*课程列表开始*/
+
+.course-list li{
+	width: 280px;
+	height: 270px;
+	padding:20px;
+	float: left;
+	margin-top: 20px;
+	margin-left: -25px;
+	list-style: none;
+
+}
+.course-list li a{
+	position: relative;
+	display: block;
+	color: #ccc;
+	text-decoration: none;
+}
+.course-list li a h4{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	color:#14191e;
+	font-weight: bold;
+}
+.course-list li a p{
+	font-size: 12px;
+	color:#ccc;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.course-list li a span:first-of-type{
+	color:#444;
+}
+.course-list li a span:nth-of-type(2){
+	color:#444;
+	margin-left: 20px;
+}
+.course-list li a .tip{
+	font-size: 12px;
+	color:#fff;
+	background: rgba(0,0,0,0.5);
+	display: block;
+	height: 20px;
+	width: 120px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 100;
+	position: absolute;
+	right: -20px;
+	top:0px;
+	transition:all 0.3s;
+	opacity: 0;
+
+	
+}
+.course-list li:hover .tip{
+	right: 0px;
+	opacity: 1;
+
+}
+.course-list li:hover{
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/*分页*/
+.fenye{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	height: 100px;
+	padding: 15px 0px;
+	
+}
+.fenye span{
+	font-size: 14px;
+	margin-right: 8px;
+}
+.fenye a{
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 8px;
+	border-bottom: 1px solid #fff;
+	color:#666;
+	text-decoration: none;
+	height: 30px;
+	line-height: 30px;
+}
+.fenye a:hover{
+	border-bottom: 1px solid #cc0000;
+	color:#cc0000;
+}
+.fenye .shouye,.fenye .prev-page{
+	color:#ccc;
+}
+.fenye a:nth-of-type(1){
+	color:#fff;
+	background: #cc0000;
+	border-bottom: 1px solid #cc0000;
+}
+/*页脚部分*/
+#footer{
+	margin-top: 200px;
+	height: 99px;
+	background: #000;
+	color:#787d82;
+}
+
+#footer .left{
+	float: left;
+	padding:20px 0px;
+	margin-left: 30px;
+}
+
+#footer .left ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#footer .left ul li a{
+	display: block;
+	width: 48px;
+	height: 23px;
+	font-size: 12px;
+	text-decoration: none;
+	color:#c8cdd2;
+}
+
+#footer .left ul li a:hover{
+	color:#fff;
+}
+
+#footer .right{
+	width: 162px;
+	padding:20px 0;
+	float: right;
+	margin-right: 30px;
+}
+		
+
+#footer .right a{
+	opacity: 0.5;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left:6px;
+	transition:all .3s;
+}
+
+#footer .right .weixin{
+	position: relative;
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -279px;
+}
+
+#footer .right .weibo{
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -321px;
+}
+
+#footer .right .qq{
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -363px;
+}
+		
+#footer .right .weixin:hover{
+	opacity: 1;
+}
+
+#footer .right .weixin:hover .weixin-tip{
+	display: block;
+}
+
+#footer .right .weibo:hover{
+	opacity: 1;
+}
+
+#footer .right .qq:hover{
+	opacity: 1;
+}
+
+#footer .right .weixin .weixin-tip{
+	width: 170px;
+	height: 220px;
+	position: absolute;/*必须加*/
+	left: -69px;
+	bottom: 35px;
+	background: url(../imgs/footer-sprite.png) no-repeat 0 0;
+	display: none;
+}
+
+/*回到顶部*/
+#goto-top{
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+	width: 52px;
+	min-height: 160px;
+}
+#goto-top a{
+	position: relative;
+	display: block;
+	width: 52px;
+	height: 52px;
+	transition:all .3s;
+	background: url(../imgs/elevator.png) no-repeat;
+}
+#goto-top .weixin{
+	background-position: 0 -860px;
+
+}
+#goto-top .msg{
+	background-position: 0 -426px;
+}
+#goto-top .app{
+	background-position: 0 -550px;
+}
+#goto-top .top{
+	background-position: 0 -674px;
+}
+
+
+#goto-top .weixin:hover{
+	background-position: 0 -922px;
+}
+#goto-top .msg:hover{
+	background-position: 0 -488px;
+}
+#goto-top .app:hover{
+	background-position: 0 -612px;
+}
+#goto-top .top:hover{
+	background-position: 0 -736px;
+}
+
+#goto-top .weixin .weixin-tip{
+
+	position: absolute;
+	right: 46px;
+	bottom: -10px;
+	width: 172px;
+	height: 212px;
+	opacity: 0;
+	transform: scale(0.01);
+	background: url(../imgs/elevator.png) no-repeat 0 0;
+	transition:all .3s;
+}
+#goto-top .app .app-tip{
+	position: absolute;
+	right: 46px;
+	bottom: -10px;
+	width: 172px;
+	height: 194px;
+	opacity: 0;	
+	transform: scale(0.01);
+	background: url(../imgs/elevator.png) no-repeat 0 -222px;
+	transition:all .3s;
+}
+#goto-top .weixin:hover .weixin-tip{
+	opacity: 1;
+	transform: scale(1);
+
+}
+#goto-top .app:hover .app-tip{
+	opacity: 1;
+	transform: scale(1);
+
+}

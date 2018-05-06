@@ -1,0 +1,553 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	min-width: 1200px;
+	height: 100%;
+	width: 100%;
+	background: url(../imgs/bg.jpg) no-repeat;
+	background-size: cover;
+
+	/*禁止选择*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.swiper-container {
+    width: 100%;
+    height: 600px;
+}
+
+
+.coatainer-content{
+	background:#eef1f2;
+}
+
+
+
+.footer{
+	height: 288px;
+	background: #fff;
+}
+.footer-wrap{
+	width: 100%;
+	height: 62px;
+	padding-top: 30px;
+	text-align: center;
+}
+.footer-a{
+	position: relative;
+	margin: 0 auto;
+	height: 32px;
+	width: 200px;
+	background: url(../imgs/idx-btm.png) no-repeat center -221px;
+}
+
+.footer-a a{
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	
+}
+.footer-a .xinlang{
+	left: 6px;
+}
+
+.footer-a .weixin{
+	left: 58px;
+}
+.footer-a .weibo{
+	left: 110px;
+}
+.footer-a .qqkongjiang{
+	right: 6px;
+}
+.footer-a .xinlang:hover{
+	 background: url(../imgs/idx-btm.png) no-repeat 0px -262px;
+}
+.footer-a .weixin:hover{
+
+	 background: url(../imgs/idx-btm.png) no-repeat -52px -262px;
+}
+.footer-a .weibo:hover{
+	background: url(../imgs/idx-btm.png) no-repeat -104px -262px;
+}
+.footer-a .qqkongjiang:hover{
+	background: url(../imgs/idx-btm.png) no-repeat -156px -262px;
+}
+.weixin .erweima{
+	left: -72px;
+	bottom: 40px;
+	display: none;
+	position: absolute;
+	height: 210px;
+	width: 176px;
+	background: url(../imgs/idx-btm.png) no-repeat 0px 0px;
+}
+.footer-a .weixin:hover i{
+	display: block;
+}
+.footer-ul{
+	margin-top: 30px;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+}
+.footer-ul ul li{
+	padding:0 10px;
+	display: inline-block;
+}
+.footer-ul ul li a {
+	color:#666;
+}
+.footer-ul ul li a:hover{
+	color:#be3948;
+	text-decoration: none;
+}
+
+
+.footer-add{
+	margin-top:10px;
+	height: 50px;
+	border-bottom: 1px solid #eee;
+}
+.footer-add ul li{
+	padding:0 10px;
+	display: inline-block;
+}
+.footer-add ul li a {
+	color:#777;
+}
+.footer-add ul li a:hover{
+	color:#333;
+	text-decoration: none;
+}
+.footer-message{
+	margin-top:20px;
+	font-size: 16px;
+	color:#ccc;
+}
+
+.footer-img {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.footer-img img{
+	height: 32px;
+	width: 89px;
+}
+.footer-img a:hover img{
+	height: 47px;
+	width: 127px;
+}
+
+
+
+
+.share-header{
+	height: 61px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	line-height: 61px;
+}
+.share-header h1{
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+
+
+.share-list li{
+	width: 280px;
+	height: 270px;
+	padding:20px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 5px;
+
+}
+.share-list li a{
+	position: relative;
+	display: block;
+	color: #ccc;
+	text-decoration: none;
+}
+.share-list li a h4{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	color:#14191e;
+	font-weight: bold;
+}
+.share-list li a p{
+	font-size: 12px;
+	color:#ccc;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.share-list li a span:first-of-type{
+	color:#444;
+}
+.share-list li a span:nth-of-type(2){
+	color:#444;
+	margin-left: 20px;
+}
+.share-list li a .tip{
+	font-size: 12px;
+	color:#fff;
+	background: rgba(0,0,0,0.5);
+	display: block;
+	height: 20px;
+	width: 120px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 100;
+	position: absolute;
+	right: -20px;
+	top:0px;
+	transition:all 0.3s;
+	opacity: 0;
+
+
+	
+}
+
+.share-list ul li:hover img{
+	width:250px;
+	height: 140px; 
+}
+
+.share-list li:hover .tip{
+	right: 0px;
+	opacity: 1;
+
+}
+.share-list li:hover{
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.fenye{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	height: 100px;
+	padding: 15px 0px;
+	
+}
+.fenye span{
+	font-size: 14px;
+	margin-right: 8px;
+}
+.fenye a{
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 8px;
+	border-bottom: 1px solid #fff;
+	color:#666;
+	text-decoration: none;
+	height: 30px;
+	line-height: 30px;
+}
+.fenye a:hover{
+	border-bottom: 1px solid #cc0000;
+	color:#cc0000;
+}
+.fenye .shouye,.fenye .prev-page{
+	color:#ccc;
+}
+.fenye a:nth-of-type(1){
+	color:#fff;
+	background: #cc0000;
+	border-bottom: 1px solid #cc0000;
+}
+
+#footer{
+	height: 99px;
+	background: #000;
+	color:#787d82;
+}
+#footer .left{
+	float: left;
+	padding:20px 0px;
+	margin-left: 30px;
+}
+#footer .left ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#footer .left ul li a{
+	display: block;
+	width: 48px;
+	height: 23px;
+	font-size: 12px;
+	text-decoration: none;
+	color:#c8cdd2;
+}
+#footer .left ul li a:hover{
+	color:#fff:}
+#footer .right{
+	width: 162px;
+	padding:20px 0;	
+	float: right;
+	margin-right: 30px;
+}
+#footer .right a{
+	opacity: 0.5;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left:6px;
+	transition:all .3s;
+}
+#footer .right .weixin{
+	position: relative;
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -279px;
+}
+#footer .right .weibo{
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -321px;
+}
+#footer .right .qq{
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -363px;
+}
+#footer .right .weixin:hover{
+	opacity: 1;
+}
+#footer .right .weixin:hover .weixin-tip{
+	display: block;
+}
+#footer .right .weibo:hover{
+	opacity: 1;
+}
+#footer .right .qq:hover{
+	opacity: 1;
+}
+#footer .right .weixin .weixin-tip{
+	width: 170px;
+	height: 220px;
+	position: absolute;
+	left: -69px;
+	bottom: 35px;
+	background: url(../imgs/footer-sprite.png) no-repeat 0 0;
+	display: none;
+}
+
+#goto-top{
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+	width: 52px;
+	min-height: 160px;
+}
+#goto-top a{
+	position: relative;
+	display: block;
+	width: 52px;
+	height: 52px;
+	transition:all .3s;
+	background: url(../imgs/elevator.png?1) no-repeat;
+}
+#goto-top .weixin{
+	background-position: 0 -860px;
+
+}
+#goto-top .msg{
+	background-position: 0 -426px;
+}
+#goto-top .app{
+	background-position: 0 -550px;
+}
+#goto-top .top{
+	background-position: 0 -674px;
+}
+
+
+#goto-top .weixin:hover{
+	background-position: 0 -922px;
+}
+#goto-top .msg:hover{
+	background-position: 0 -488px;
+}
+#goto-top .app:hover{
+	background-position: 0 -612px;
+}
+#goto-top .top:hover{
+	background-position: 0 -736px;
+}
+
+#goto-top .weixin .weixin-tip{
+
+	position: absolute;
+	right: 46px;
+	bottom: -10px;
+	width: 172px;
+	height: 212px;
+	opacity: 0;
+	transform: scale(0.01);
+	background: url(../imgs/elevator.png?1) no-repeat 0 0;
+	transition:all .3s;
+}
+#goto-top .app .app-tip{
+	position: absolute;
+	right: 46px;
+	bottom: -10px;
+	width: 172px;
+	height: 194px;
+	opacity: 0;	
+	transform: scale(0.01);
+	background: url(../imgs/elevator.png?1) no-repeat 0 -222px;
+	transition:all .3s;
+}
+#goto-top .weixin:hover .weixin-tip{
+	opacity: 1;
+	transform: scale(1);
+
+}
+#goto-top .app:hover .app-tip{
+	opacity: 1;
+	transform: scale(1);
+
+}
+
+
+
+
+.share-banner{
+	margin-top: 51px;
+	height: 240px;
+	width:100%;
+	background: url(../imgs/corp_banner_top.jpg) no-repeat;
+}
+.share-items{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.share-items ul li{
+
+	opacity: 0.8;
+	float: left;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	transition: all 0.3;
+}
+.share-items ul li a{
+	
+	display: block;
+	height: 60px;
+	width: 150px;
+	
+}
+.share-items ul li:hover{
+	opacity: 1;
+}
+
+.share-items h1{
+	font-size: 24px;
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+
+.share-left{
+	width: 75%;
+	float: left;
+	color: #14191e;
+}
+.share-left ul {
+	margin-left: -25px;
+}
+.share-left li{
+	margin-right: 2px;
+}
+
+    
+.share-right{
+	width: 280px;
+	float: right;
+	color: #14191e;
+
+}
+.share-right ul {
+	margin-right: 0px;
+	padding: 0px 16px;
+}
+.share-right .share-header{
+	margin-left: 15px;
+}
+.share-right ul li{
+	width: 240px;
+	display: block;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+.share-right ul li h1{
+	font-size: 16px;
+	font-weight: bold;
+
+}
+.share-right ul li p{
+	font-size: 14px;
+	color:#666;
+}
+
+
+.share-right img:hover{
+	width: 250px;
+	height: 140px;
+}
+.share-right .hezuo li{
+	border-bottom: none;
+}
+
+
+
+
+
+.share-right .p-a{
+	display: block;
+	width: 100%;
+	height: 40px;
+	background: #CC0001;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	color:#fff;
+}
+.share-right .p-a:hover{
+	background: #f00000;
+	text-decoration: none;
+	transition:all .3s;
+}
+.share-li a{
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	padding:0px 5px;
+	height: 20px;
+	background: #edf1f2;
+	margin-left: 10px;
+	color:#787d82;
+	text-decoration: none;
+
+
+}
+.share-li a:hover{
+	color:#14191e !important;
+	background: #d0d6d9;
+	text-decoration: none;
+}
+
+
+.modal-size {
+			width: 400px!important;
+		}
+

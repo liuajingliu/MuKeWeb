@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="layer/skin/layer.css" />
+<link rel="stylesheet" href="layer/skin/layer.ext.css" />
+<link rel="stylesheet" href="layer/question.css"/>
+
+<script type="text/javascript" src="layer/jquery.js" ></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="breadcrumb">
+			<a href="javascript:void(0)">社区</a>
+			&nbsp;/&nbsp;
+			<a href="javascript:void(0)">全部问答</a>		
+			&nbsp;/&nbsp;
+			<span>最新问题</span>
+		</div>
+	
+		<textarea rows="6" cols="46" name="question"></textarea>
+		<br/>
+		<input type="button" value="提交" width="30px" id="btn" class="btn-success"/>
+	</div>
+	
+<script>
+	$(document).ready(function(){
+		$("#btn").click(function(){
+			//layer.closeAll();   //当前页面的所有弹出层关闭
+			window.parent.layer.closeAll();	  //window.parent 当前窗口的父窗口
+		});
+	});
+</script>	
+</body>
+</html>
